@@ -14,6 +14,7 @@ int callback(char   errcode)
 }
 
 int testcb(char code, int (*cb)(char))
+//int testcb(char code, (int (*)(char))(cb))
 {
     return cb(code);
 }
